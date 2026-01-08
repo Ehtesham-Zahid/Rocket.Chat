@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     ".:build-preview-move": "mkdir -p ../../.preview/ && cp -r ./dist ../../.preview/uikit-playground",
-    "build-preview": "tsc && vite build",
-    "dev": "vite",
+    "build-preview": "node init && tsc && vite build",
+    "dev": "node init && vite",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit"
